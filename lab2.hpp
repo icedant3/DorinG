@@ -12,6 +12,7 @@ class latura{
 		latura();	
 		latura(double);	
 		double getlatura();
+		virtual void afisare();
 };
 
 class patrat:public  latura{
@@ -20,6 +21,7 @@ class patrat:public  latura{
 		patrat();
 		patrat(double);
 		double getarie();
+		void afisare();
 };
 
 class piramida: public patrat{
@@ -28,6 +30,7 @@ class piramida: public patrat{
 		piramida();
 		piramida(double x);
 		double getvolume();
+		void afisare();
 };
 
 #endif

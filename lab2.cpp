@@ -8,6 +8,10 @@ latura::latura(double x){
 	l=x;
 }
 
+void latura::afisare(){
+	cout<<l<<"\n";
+}
+
 double latura::getlatura(){
 return l;
 }
@@ -22,6 +26,10 @@ double patrat::getarie(){
 	return l*l;
 }
 
+void patrat::afisare(){
+	cout<<getarie()<<"\n";
+}
+
 piramida::piramida():patrat(1){
 cout<<"dati inaltimea:";
 cin>>h;	 }
@@ -31,7 +39,9 @@ cout<<"dati inaltimea:";
 cin>>h;	 }
 
 double piramida::getvolume(){
-	
-return (h*getarie()/3);
+	return (h*getarie()/3);
+}
 
+void piramida::afisare(){
+	cout<<getarie()<<"\n";
 }
