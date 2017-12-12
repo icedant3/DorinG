@@ -17,7 +17,7 @@ public :
 	Polinom operator + ( Polinom &);// adunarea polinoamelor
 	friend Polinom operator = ( Polinom & , Polinom &);// atribuirea polinoamelor
 	Polinom operator * ( Polinom &);// inmultirea polinoamelor
-
+	friend istream& operator>>(istream&, Polinom&);
 };
 #endif
 

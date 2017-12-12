@@ -77,10 +77,10 @@ Polinom Polinom::operator + (Polinom& X)
 
 Polinom operator = (Polinom& Y , Polinom& X )
 {
-	delete []coef;
+	delete Y.[]coef;
 	Y.grad = X.grad;
-	y.coef = new int[grad+1];
-	for(int i=0;i<=grad;i++) coef[i]=X.coef[i];
+	Y.coef = new int[grad+1];
+	for(int i=0;i<=Y.grad;i++) Y.coef[i]=X.coef[i];
 	return *this;
 }
 
@@ -95,4 +95,8 @@ Polinom Polinom::operator *(Polinom & x)
 		for(int l=0; l<= s.grad; l++) s.coef[l]=0;
 	}
 	return rez;
+}
+
+istream& operator>>(istream&, Polinom& X){
+
 }
